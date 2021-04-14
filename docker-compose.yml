@@ -1,0 +1,24 @@
+version: '3'
+services:
+  district_db:
+    image: postgres:alpine
+    volumes:
+      - ./.persistence/district_db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USERNAME: postgres
+      POSTGRES_DB: db_distirct
+    ports:
+      - 5432:5432
+  district:
+    build: .
+    ports:
+      - 8080:8080
+    depends_on:
+      - district_db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://district_db:5432/db_distirct
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgres
+      SPRING_JPA_HIBERNATE_DDL-AUTO: update
+      SERVER_PORT: 8080
