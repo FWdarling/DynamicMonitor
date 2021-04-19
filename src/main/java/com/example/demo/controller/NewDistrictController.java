@@ -18,7 +18,7 @@ import java.util.List;
  * author: fourwood
  */
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v1/newdistrict")
 public class NewDistrictController {
     @Autowired
     private NewDistrictRepo newDistrictRepo;
@@ -39,7 +39,7 @@ public class NewDistrictController {
     public ResponseEntity getGoal(@PathVariable long districtId, @RequestParam int type){
         if(type < 0 || type > TYPE_THRESHOLD) return new ResponseEntity<>("Bad Request", HttpStatus.BAD_REQUEST);
         NewDistrict district = newDistrictRepo.findById(districtId);
-        if (district == null) return new ResponseEntity<>("Commodity Not Found!", HttpStatus.NOT_FOUND);
+        if (district == null) return new ResponseEntity<>("District Not Found!", HttpStatus.NOT_FOUND);
         ValueType valueType = ValueType.values()[type];
         if (valueType == ValueType.LAND) {
             LandResponse response = new LandResponse(district.getGShape(), district.getGFunc(), district.getGGreenland());
@@ -64,7 +64,7 @@ public class NewDistrictController {
     public ResponseEntity getReal(@PathVariable long districtId, @RequestParam int type) {
         if(type < 0 || type > TYPE_THRESHOLD) return new ResponseEntity<>("Bad Request", HttpStatus.BAD_REQUEST);
         NewDistrict district = newDistrictRepo.findById(districtId);
-        if (district == null) return new ResponseEntity<>("Commodity Not Found!", HttpStatus.NOT_FOUND);
+        if (district == null) return new ResponseEntity<>("District Not Found!", HttpStatus.NOT_FOUND);
         ValueType valueType = ValueType.values()[type];
         if (valueType == ValueType.LAND) {
             LandResponse response = new LandResponse(district.getRShape(), district.getRFunc(), district.getRGreenland());
