@@ -14,50 +14,6 @@ public class DynamicMonitor {
     public DynamicMonitor() {
     }
 
-    public DynamicMonitor(String name, Float standardOutline, Float standardForestCoverage, Float standardServiceValue, Float standardHomelandFunction, Float standardRoadNetworkDensity, Float standardGreenBuilding, Float standardGini, Float standardReclaimedWater, Float standardNonMotorizedLanes, Float standardNonFossilEnergy, Float standardGdpEnergyConsumption, Float standardSolidWaste, Float standardPublicSecuritySatisfaction, Float standardWaterSurface, Float standardDomesticWater, Float standardWaterNetworkDensity, Float standardCarbonEmission, Float standardCarbonEmissionPerCapita, Float standardCarbonEmissionPerProduction, Float standardEnergyConsumptionPerCapita, Float valueOutline, Float valueForestCoverage, Float valueServiceValue, Float valueHomelandFunction, Float valueRoadNetworkDensity, Float valueGreenBuilding, Float valueGini, Float valueReclaimedWater, Float valueNonMotorizedLanes, Float valueNonFossilEnergy, Float valueGdpEnergyConsumption, Float valueSolidWaste, Float valuePublicSecuritySatisfaction, Float valueWaterSurface, Float valueDomesticWater, Float valueWaterNetworkDensity, Float valueCarbonEmission, Float valueCarbonEmissionPerCapita, Float valueCarbonEmissionPerProduction, Float valueEnergyConsumptionPerCapita) {
-        this.name = name;
-        this.standardOutline = standardOutline;
-        this.standardForestCoverage = standardForestCoverage;
-        this.standardServiceValue = standardServiceValue;
-        this.standardHomelandFunction = standardHomelandFunction;
-        this.standardRoadNetworkDensity = standardRoadNetworkDensity;
-        this.standardGreenBuilding = standardGreenBuilding;
-        this.standardGini = standardGini;
-        this.standardReclaimedWater = standardReclaimedWater;
-        this.standardNonMotorizedLanes = standardNonMotorizedLanes;
-        this.standardNonFossilEnergy = standardNonFossilEnergy;
-        this.standardGdpEnergyConsumption = standardGdpEnergyConsumption;
-        this.standardSolidWaste = standardSolidWaste;
-        this.standardPublicSecuritySatisfaction = standardPublicSecuritySatisfaction;
-        this.standardWaterSurface = standardWaterSurface;
-        this.standardDomesticWater = standardDomesticWater;
-        this.standardWaterNetworkDensity = standardWaterNetworkDensity;
-        this.standardCarbonEmission = standardCarbonEmission;
-        this.standardCarbonEmissionPerCapita = standardCarbonEmissionPerCapita;
-        this.standardCarbonEmissionPerProduction = standardCarbonEmissionPerProduction;
-        this.standardEnergyConsumptionPerCapita = standardEnergyConsumptionPerCapita;
-        this.valueOutline = valueOutline;
-        this.valueForestCoverage = valueForestCoverage;
-        this.valueServiceValue = valueServiceValue;
-        this.valueHomelandFunction = valueHomelandFunction;
-        this.valueRoadNetworkDensity = valueRoadNetworkDensity;
-        this.valueGreenBuilding = valueGreenBuilding;
-        this.valueGini = valueGini;
-        this.valueReclaimedWater = valueReclaimedWater;
-        this.valueNonMotorizedLanes = valueNonMotorizedLanes;
-        this.valueNonFossilEnergy = valueNonFossilEnergy;
-        this.valueGdpEnergyConsumption = valueGdpEnergyConsumption;
-        this.valueSolidWaste = valueSolidWaste;
-        this.valuePublicSecuritySatisfaction = valuePublicSecuritySatisfaction;
-        this.valueWaterSurface = valueWaterSurface;
-        this.valueDomesticWater = valueDomesticWater;
-        this.valueWaterNetworkDensity = valueWaterNetworkDensity;
-        this.valueCarbonEmission = valueCarbonEmission;
-        this.valueCarbonEmissionPerCapita = valueCarbonEmissionPerCapita;
-        this.valueCarbonEmissionPerProduction = valueCarbonEmissionPerProduction;
-        this.valueEnergyConsumptionPerCapita = valueEnergyConsumptionPerCapita;
-    }
-
     public Long getDistrictId() {
         return districtId;
     }
@@ -390,6 +346,68 @@ public class DynamicMonitor {
         this.valueEnergyConsumptionPerCapita = valueEnergyConsumptionPerCapita;
     }
 
+    public String getUnitDomesticWater() {
+        return unitDomesticWater;
+    }
+
+    public void setUnitDomesticWater(String unitDomesticWater) {
+        this.unitDomesticWater = unitDomesticWater;
+    }
+
+    public String getUnitGdpEnergyConsumption() {
+        return unitGdpEnergyConsumption;
+    }
+
+    public void setUnitGdpEnergyConsumption(String unitGdpEnergyConsumption) {
+        this.unitGdpEnergyConsumption = unitGdpEnergyConsumption;
+    }
+
+    public DynamicMonitor(String name, Float standardOutline, Float standardForestCoverage, Float standardServiceValue, Float standardHomelandFunction, Float standardRoadNetworkDensity, Float standardGreenBuilding, Float standardGini, Float standardReclaimedWater, Float standardNonMotorizedLanes, Float standardNonFossilEnergy, Float standardGdpEnergyConsumption, Float standardSolidWaste, Float standardPublicSecuritySatisfaction, Float standardWaterSurface, Float standardDomesticWater, Float standardWaterNetworkDensity, Float standardCarbonEmission, Float standardCarbonEmissionPerCapita, Float standardCarbonEmissionPerProduction, Float standardEnergyConsumptionPerCapita, Float valueOutline, Float valueForestCoverage, Float valueServiceValue, Float valueHomelandFunction, Float valueRoadNetworkDensity, Float valueGreenBuilding, Float valueGini, Float valueReclaimedWater, Float valueNonMotorizedLanes, Float valueNonFossilEnergy, Float valueGdpEnergyConsumption, Float valueSolidWaste, Float valuePublicSecuritySatisfaction, Float valueWaterSurface, Float valueDomesticWater, Float valueWaterNetworkDensity, Float valueCarbonEmission, Float valueCarbonEmissionPerCapita, Float valueCarbonEmissionPerProduction, Float valueEnergyConsumptionPerCapita, String unitDomesticWater, String unitGdpEnergyConsumption) {
+        this.name = name;
+        this.standardOutline = standardOutline;
+        this.standardForestCoverage = standardForestCoverage;
+        this.standardServiceValue = standardServiceValue;
+        this.standardHomelandFunction = standardHomelandFunction;
+        this.standardRoadNetworkDensity = standardRoadNetworkDensity;
+        this.standardGreenBuilding = standardGreenBuilding;
+        this.standardGini = standardGini;
+        this.standardReclaimedWater = standardReclaimedWater;
+        this.standardNonMotorizedLanes = standardNonMotorizedLanes;
+        this.standardNonFossilEnergy = standardNonFossilEnergy;
+        this.standardGdpEnergyConsumption = standardGdpEnergyConsumption;
+        this.standardSolidWaste = standardSolidWaste;
+        this.standardPublicSecuritySatisfaction = standardPublicSecuritySatisfaction;
+        this.standardWaterSurface = standardWaterSurface;
+        this.standardDomesticWater = standardDomesticWater;
+        this.standardWaterNetworkDensity = standardWaterNetworkDensity;
+        this.standardCarbonEmission = standardCarbonEmission;
+        this.standardCarbonEmissionPerCapita = standardCarbonEmissionPerCapita;
+        this.standardCarbonEmissionPerProduction = standardCarbonEmissionPerProduction;
+        this.standardEnergyConsumptionPerCapita = standardEnergyConsumptionPerCapita;
+        this.valueOutline = valueOutline;
+        this.valueForestCoverage = valueForestCoverage;
+        this.valueServiceValue = valueServiceValue;
+        this.valueHomelandFunction = valueHomelandFunction;
+        this.valueRoadNetworkDensity = valueRoadNetworkDensity;
+        this.valueGreenBuilding = valueGreenBuilding;
+        this.valueGini = valueGini;
+        this.valueReclaimedWater = valueReclaimedWater;
+        this.valueNonMotorizedLanes = valueNonMotorizedLanes;
+        this.valueNonFossilEnergy = valueNonFossilEnergy;
+        this.valueGdpEnergyConsumption = valueGdpEnergyConsumption;
+        this.valueSolidWaste = valueSolidWaste;
+        this.valuePublicSecuritySatisfaction = valuePublicSecuritySatisfaction;
+        this.valueWaterSurface = valueWaterSurface;
+        this.valueDomesticWater = valueDomesticWater;
+        this.valueWaterNetworkDensity = valueWaterNetworkDensity;
+        this.valueCarbonEmission = valueCarbonEmission;
+        this.valueCarbonEmissionPerCapita = valueCarbonEmissionPerCapita;
+        this.valueCarbonEmissionPerProduction = valueCarbonEmissionPerProduction;
+        this.valueEnergyConsumptionPerCapita = valueEnergyConsumptionPerCapita;
+        this.unitDomesticWater = unitDomesticWater;
+        this.unitGdpEnergyConsumption = unitGdpEnergyConsumption;
+    }
+
     @Override
     public String toString() {
         return "DynamicMonitor{" +
@@ -486,4 +504,6 @@ public class DynamicMonitor {
     private Float valueCarbonEmissionPerProduction;
     private Float valueEnergyConsumptionPerCapita;
 
+    private String unitDomesticWater;
+    private String unitGdpEnergyConsumption;
 }

@@ -1,7 +1,6 @@
 package com.example.demo.dao;
 
 import com.example.demo.entity.DynamicMonitor;
-import com.example.demo.entity.NewDistrict;
 import org.springframework.data.repository.CrudRepository;
 
 /**

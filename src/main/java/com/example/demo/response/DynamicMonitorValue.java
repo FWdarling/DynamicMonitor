@@ -57,6 +57,8 @@ public class DynamicMonitorValue {
         this.valueCarbonEmissionPerCapita = dynamicMonitor.getValueCarbonEmissionPerCapita();
         this.valueCarbonEmissionPerProduction = dynamicMonitor.getValueCarbonEmissionPerProduction();
         this.valueEnergyConsumptionPerCapita = dynamicMonitor.getValueEnergyConsumptionPerCapita();
+        this.unitDomesticWater = dynamicMonitor.getUnitDomesticWater();
+        this.unitGdpEnergyConsumption = dynamicMonitor.getUnitGdpEnergyConsumption();
     }
 
     public Long districtId;
@@ -81,4 +83,6 @@ public class DynamicMonitorValue {
     public Float valueCarbonEmissionPerCapita;
     public Float valueCarbonEmissionPerProduction;
     public Float valueEnergyConsumptionPerCapita;
+    public String unitDomesticWater;
+    public String unitGdpEnergyConsumption;
 }

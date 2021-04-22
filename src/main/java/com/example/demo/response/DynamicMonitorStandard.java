@@ -57,6 +57,8 @@ public class DynamicMonitorStandard {
         this.standardCarbonEmissionPerCapita = dynamicMonitor.getStandardCarbonEmissionPerCapita();
         this.standardCarbonEmissionPerProduction = dynamicMonitor.getStandardCarbonEmissionPerProduction();
         this.standardEnergyConsumptionPerCapita = dynamicMonitor.getStandardEnergyConsumptionPerCapita();
+        this.unitDomesticWater = dynamicMonitor.getUnitDomesticWater();
+        this.unitGdpEnergyConsumption = dynamicMonitor.getUnitGdpEnergyConsumption();
     }
 
     public Long districtId;
@@ -81,4 +83,6 @@ public class DynamicMonitorStandard {
     public Float standardCarbonEmissionPerCapita;
     public Float standardCarbonEmissionPerProduction;
     public Float standardEnergyConsumptionPerCapita;
+    public String unitDomesticWater;
+    public String unitGdpEnergyConsumption;
 }
